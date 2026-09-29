@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website profil pribadi Gector">
+  <title>Gector | Profil Pribadi</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav aria-label="Navigasi utama">
+    <a class="brand" href="#beranda">Gector</a>
+    <div class="nav-links">
+      <a href="#tentang">Tentang</a>
+      <a href="#jadwal">Jadwal</a>
+      <a href="#sosial">Sosial</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <header id="beranda">
+    <div class="hero-content">
+      <img
+        class="profile-photo"
+        src="https://placehold.co/400x400/DBEAFE/1E3A8A?text=Foto+Gector"
+        alt="Foto profil Gector"
+      >
+      <h1>Gector</h1>
+      <p class="tagline">Mahasiswa yang tertarik pada teknologi dan pengembangan web.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Halo! Nama saya Gector. Saya sedang belajar membangun website yang
+            semantik, rapi, responsif, dan mudah digunakan. Saya senang mempelajari
+            hal-hal baru serta mengembangkan kemampuan di bidang teknologi.
+          </p>
+        </div>
+        <div>
+          <h3>Keahlian yang Dipelajari</h3>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   <section id="jadwal">
+    <h2>Jadwal Kuliah</h2>
+
+    <button type="button" id="toggleJadwal">
+      Sembunyikan Jadwal
+    </button>
+      <div class="table-wrapper" id="jadwalContainer">
+        <table>
+          <caption>Jadwal kuliah mingguan Gector.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Hari</th>
+              <th scope="col">Waktu</th>
+              <th scope="col">Mata Kuliah</th>
+              <th scope="col">Ruangan</th>
+              <th scope="col">Dosen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Senin</td>
+              <td>07.30–10.30</td>
+              <td>Penjaminan Mutu Perangkat Lunak</td>
+              <td>CPROG LAB</td>
+              <td>NIE</td>
+            </tr>
+            <tr>
+              <td>10.30–13.30</td>
+              <td>Manajemen Proyek</td>
+              <td>KTT 1.17</td>
+              <td>PDM</td>
+            </tr>
+            <tr>
+              <td>15.30–18.30</td>
+              <td>Perancangan dan Pemrograman Web</td>
+              <td>SWENG LAB</td>
+              <td>AJS</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Selasa</td>
+              <td>10.30–13.30</td>
+              <td>Pemrograman Perangkat Bergerak</td>
+              <td>CPROG LAB</td>
+              <td>PDM</td>
+            </tr>
+            <tr>
+              <td>14.30–17.30</td>
+              <td>Perancangan dan Pemrograman Web</td>
+              <td>KTT 1.17</td>
+              <td>AJS</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Rabu</td>
+              <td>08.30–10.30</td>
+              <td>Wawasan Global TIK</td>
+              <td>KTT 1.16</td>
+              <td>AJS</td>
+            </tr>
+            <tr>
+              <td>15.30–17.30</td>
+              <td>Kewirausahaan</td>
+              <td>KTT A-1.06</td>
+              <td>AFC</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Kamis</td>
+              <td>07.30–10.30</td>
+              <td>Pengalaman Pengguna (UX)</td>
+              <td>KTT 1.17</td>
+              <td>AJS</td>
+            </tr>
+            <tr>
+              <td>12.30–15.30</td>
+              <td>Pemrograman Perangkat Bergerak</td>
+              <td>KTT 1.09</td>
+              <td>PDM</td>
+            </tr>
+            <tr>
+              <td>Jumat</td>
+              <td>09.30–11.30</td>
+              <td>Kewarganegaraan (PKN)</td>
+              <td>KTT 1.08</td>
+              <td>MSC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="sosial">
+      <h2>Profil Sosial</h2>
+      <p>Kunjungi profil profesional dan repositori proyek saya:</p>
+      <div class="social-links">
+        <a class="button" href="https://www.linkedin.com/in/muh-aqsa-sirojudin-1b15b232a/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="button" href="https://github.com/gector727" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Hubungi Saya</h2>
+      <form id="contactForm">
+      <div>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@contoh.com">
+      </div>
+
+      <div>
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" placeholder="Tuliskan pesan Anda"></textarea>
+      </div>
+
+      <button type="submit">Kirim</button>
+    </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gector. Dibuat dengan HTML5 dan CSS3.</p>
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
