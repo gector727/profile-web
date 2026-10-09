@@ -2,12 +2,11 @@ const toggleButton = document.getElementById("toggleJadwal");
 const jadwalContainer = document.getElementById("jadwalContainer");
 
 toggleButton.addEventListener("click", function () {
-    if (jadwalContainer.style.display === "none") {
-        $(jadwalContainer).stop(true, true).slideDown(300);
-        toggleButton.textContent = "Sembunyikan Jadwal";
+    const isHidden = jadwalContainer.classList.toggle("d-none");
+    if (isHidden) {
+        toggleButton.innerHTML = '<i class="bi bi-eye me-1"></i>Tampilkan';
     } else {
-        $(jadwalContainer).stop(true, true).slideUp(300);
-        toggleButton.textContent = "Tampilkan Jadwal";
+        toggleButton.innerHTML = '<i class="bi bi-eye-slash me-1"></i>Sembunyikan';
     }
 });
 
@@ -20,7 +19,6 @@ form.addEventListener("submit", function (event) {
     const email = document.getElementById("email").value.trim();
 
     if (nama === "" || email === "") {
-        event.preventDefault();
         alert("Nama dan Email wajib diisi!");
         return;
     }
