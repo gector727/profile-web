@@ -58,12 +58,7 @@
       <div class="row g-4">
         <div class="col-lg-8">
           <div class="dashboard-card h-100 p-4">
-            <h3 class="h4">Tentang saya</h3>
-            <p class="text-secondary mb-4">Halo! Nama saya Muh Aqsa Sirojudin. Saya sedang belajar membangun website yang semantik, rapi, responsif, dan mudah digunakan. Saya senang mempelajari hal-hal baru serta mengembangkan kemampuan di bidang teknologi.</p>
-            <h3 class="h6 text-uppercase text-secondary">Keahlian yang dipelajari</h3>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="skill-chip">HTML5</span><span class="skill-chip">CSS3</span><span class="skill-chip">JavaScript</span><span class="skill-chip">Bootstrap</span>
-            </div>
+            <div id="profileApp"></div>
           </div>
         </div>
         <div class="col-lg-4">
@@ -83,6 +78,7 @@
         <button type="button" id="toggleJadwal" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye-slash me-1"></i>Sembunyikan</button>
       </div>
       <div class="dashboard-card p-3 p-md-4" id="jadwalContainer">
+        <p id="jadwalStatus" class="text-secondary mb-3" role="status" aria-live="polite">Memuat jadwal...</p>
         <div class="table-responsive">
           <table class="table align-middle mb-0">
             <caption class="caption-top">Jadwal kuliah mingguan Muh Aqsa Sirojudin.</caption>
@@ -95,73 +91,7 @@
               <th scope="col">Dosen</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td rowspan="3">Senin</td>
-              <td>07.30–10.30</td>
-              <td>Penjaminan Mutu Perangkat Lunak</td>
-              <td>B-CLS-101</td>
-              <td>NIE</td>
-            </tr>
-            <tr>
-              <td>10.30–13.30</td>
-              <td>Manajemen Proyek</td>
-              <td>KTT 1.17</td>
-              <td>PDM</td>
-            </tr>
-            <tr>
-              <td>15.30–18.30</td>
-              <td>Perancangan dan Pemrograman Web</td>
-              <td>SWENG LAB</td>
-              <td>AJS</td>
-            </tr>
-            <tr>
-              <td rowspan="2">Selasa</td>
-              <td>10.30–13.30</td>
-              <td>Pemrograman Perangkat Bergerak</td>
-              <td>DATA-AI LAB</td>
-              <td>PDM</td>
-            </tr>
-            <tr>
-              <td>14.30–17.30</td>
-              <td>Perancangan dan Pemrograman Web</td>
-              <td>KTT 1.17</td>
-              <td>AJS</td>
-            </tr>
-            <tr>
-              <td rowspan="2">Rabu</td>
-              <td>08.30–10.30</td>
-              <td>Wawasan Global TIK</td>
-              <td>KTT 1.16</td>
-              <td>AJS</td>
-            </tr>
-            <tr>
-              <td>15.30–17.30</td>
-              <td>Kewirausahaan</td>
-              <td>KTT A-1.06</td>
-              <td>AFC</td>
-            </tr>
-            <tr>
-              <td rowspan="2">Kamis</td>
-              <td>07.30–10.30</td>
-              <td>Pengalaman Pengguna (UX)</td>
-              <td>KTT 1.17</td>
-              <td>AJS</td>
-            </tr>
-            <tr>
-              <td>12.30–15.30</td>
-              <td>Pemrograman Perangkat Bergerak</td>
-              <td>KTT 1.09</td>
-              <td>PDM</td>
-            </tr>
-            <tr>
-              <td>Jumat</td>
-              <td>09.30–11.30</td>
-              <td>Kewarganegaraan (PKN)</td>
-              <td>KTT 1.08</td>
-              <td>MSC</td>
-            </tr>
-          </tbody>
+          <tbody id="jadwalBody"></tbody>
           </table>
         </div>
       </div>
@@ -196,6 +126,8 @@
     <div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>&copy; 2026 Muh Aqsa Sirojudin.</span><span>Dibuat dengan HTML5, CSS3, JavaScript, dan Bootstrap.</span></div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
