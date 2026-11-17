@@ -21,3 +21,10 @@ Jalankan API dengan `cd profile-api` lalu `npm run start:dev`. Setelah itu buka 
 
 <img width="1537" height="2626" alt="image" src="https://github.com/user-attachments/assets/0cec50d5-ee93-4abe-896d-2af58501e3df" />
 <img width="2172" height="783" alt="profle-flex" src="https://github.com/user-attachments/assets/990d950a-38b8-4f71-9c59-a8a792252eaa" />
+
+Endpoint Test using Insomnia:
+- GET /api/jadwal/, GET /api/jadwal/:hari, POST /api/jadwal/
+<img width="795" height="552" alt="image" src="https://github.com/user-attachments/assets/36c4594e-c6c4-4058-ab91-875e37fae8da" />
+<img width="793" height="555" alt="image" src="https://github.com/user-attachments/assets/701a1d3f-d02b-4e71-84a2-766638edd8b7" />
+<img width="794" height="559" alt="image" src="https://github.com/user-attachments/assets/516dbae1-3401-49e8-9c0d-9092e9c4b480" />
+<img width="795" height="557" alt="image" src="https://github.com/user-attachments/assets/ce5b6347-a139-437e-ad74-38c4081b1a89" />
